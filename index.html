@@ -1,0 +1,134 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Order #001 · A Surprise For You Two</title>
+<style>
+:root{--bg:#fff4ec;--bg2:#ffe3d6;--ink:#3a1d2e;--mut:#8a6577;--card:#ffffffcc;--acc:#e0527a;--gold:#c58b2b;--line:#e8c9bd;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b0f2e;--bg2:#321545;--ink:#fff3ea;--mut:#c9afc4;--card:#ffffff14;--acc:#ff7a9e;--gold:#f2c46d;--line:#5a3a6e}}
+:root[data-theme="dark"]{--bg:#1b0f2e;--bg2:#321545;--ink:#fff3ea;--mut:#c9afc4;--card:#ffffff14;--acc:#ff7a9e;--gold:#f2c46d;--line:#5a3a6e}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:linear-gradient(160deg,var(--bg),var(--bg2));color:var(--ink);font:16px/1.5 -apple-system,"Segoe UI",Roboto,sans-serif;overflow-x:hidden}
+h1,h2{font-family:Georgia,"Times New Roman",serif;margin:.2em 0}
+.sc{display:none;min-height:100vh;padding:28px 20px 90px;max-width:480px;margin:0 auto;animation:in .7s}
+.sc.on{display:block}@keyframes in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.c{text-align:center}.mut{color:var(--mut)}.tag{letter-spacing:.2em;font-size:12px;color:var(--gold);font-weight:700}
+.btn{display:block;width:100%;margin:22px 0 0;padding:15px;border:0;border-radius:16px;background:var(--acc);color:#fff;font:700 17px inherit;cursor:pointer;box-shadow:0 8px 22px #0003}
+.btn:active{transform:scale(.98)}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:16px;backdrop-filter:blur(6px)}
+.bell{font-size:64px;animation:r 1s infinite}@keyframes r{0%,100%{transform:rotate(0)}20%{transform:rotate(14deg)}40%{transform:rotate(-14deg)}60%{transform:rotate(8deg)}}
+.tr{margin:26px 0 0 14px;position:relative}.tr:before{content:"";position:absolute;left:15px;top:8px;bottom:8px;width:4px;background:var(--line);border-radius:4px}
+.st{display:flex;gap:16px;align-items:center;margin:0 0 42px;position:relative;opacity:.45;transition:.6s}.st.d{opacity:1}
+.dot{width:34px;height:34px;border-radius:50%;background:var(--line);display:grid;place-items:center;color:#fff;font-weight:900;flex:none;transition:.6s}.st.d .dot{background:var(--acc);box-shadow:0 0 0 6px #e0527a33}
+.st b{display:block}.st small{color:var(--mut)}
+.sw{position:relative;margin-top:20px;border-radius:22px;overflow:hidden}.sw .msg{padding:26px 20px;background:var(--card);border:1px solid var(--line);border-radius:22px;min-height:260px}
+.sw canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none;border-radius:22px;transition:opacity .8s}
+.tl{position:relative;margin:10px 0 0;padding-left:22px;border-left:3px solid var(--line)}.tl .it{margin:0 0 30px;position:relative}.tl .it:before{content:"";position:absolute;left:-31px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--acc)}
+.tl img{width:100%;border-radius:18px;display:block;box-shadow:0 10px 26px #0004;margin-top:8px}.tl p{margin:6px 2px 0}
+.env{margin:12px 0;cursor:pointer}.env .h{font-weight:700;display:flex;justify-content:space-between}.env .b{max-height:0;overflow:hidden;transition:.5s;color:var(--mut)}.env.o .b{max-height:240px;margin-top:10px}
+.cp{display:flex;align-items:center;gap:12px;margin:12px 0;border:2px dashed var(--gold);border-radius:16px;padding:14px;background:var(--card);cursor:pointer;position:relative}.cp .e{font-size:28px}.cp.u{opacity:.45}.cp.u:after{content:"REDEEMED";position:absolute;right:12px;top:50%;transform:translateY(-50%) rotate(-10deg);border:2px solid var(--acc);color:var(--acc);padding:2px 8px;border-radius:8px;font-weight:900;font-size:13px}
+.rc{font-family:"Courier New",monospace;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:18px;margin-top:18px}.rc div{display:flex;justify-content:space-between;margin:6px 0}
+.ly{min-height:3.6em;font-family:Georgia,serif;font-size:19px;font-style:italic;margin:18px 0}
+.re{position:relative;height:130px;margin-top:10px}.re .btn{position:absolute;width:48%;margin:0;top:30px}#no{right:0;transition:.25s}#yes{left:0}
+.gal img{width:100%;border-radius:18px;margin:10px 0 2px;box-shadow:0 10px 26px #0004;display:block}
+#mg{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}.mc{aspect-ratio:3/4;perspective:600px;cursor:pointer}.mc .in{position:relative;width:100%;height:100%;transition:.5s;transform-style:preserve-3d}.mc.f .in{transform:rotateY(180deg)}.mc .bk,.mc .fr{position:absolute;inset:0;border-radius:14px;backface-visibility:hidden}.mc .bk{background:linear-gradient(135deg,var(--acc),var(--gold));display:grid;place-items:center;font-size:30px;color:#fff}.mc .fr{transform:rotateY(180deg);background-size:cover;background-position:center;border:2px solid var(--gold)}.mc.ok .in{box-shadow:0 0 0 3px var(--acc);border-radius:14px}
+.opt{display:block;width:100%;margin:10px 0;padding:14px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:600 16px inherit;text-align:left;cursor:pointer}.opt:active{background:var(--acc);color:#fff}
+.ring{width:190px;height:190px;border-radius:50%;margin:24px auto;display:grid;place-items:center;font:900 44px Georgia;background:conic-gradient(var(--acc) var(--p,0%),var(--line) 0)}.ring span{width:158px;height:158px;border-radius:50%;background:var(--bg);display:grid;place-items:center}
+.hold{touch-action:none;user-select:none;-webkit-user-select:none}.reel{display:flex;gap:10px;align-items:center;margin:10px 0;padding:14px;border-radius:14px;background:var(--card);border:1px solid var(--line)}.reel small{color:var(--gold);font-weight:800;width:62px}.reel b{font-size:17px}
+.lock{font-size:60px}
+#mus{position:fixed;right:14px;top:calc(12px + env(safe-area-inset-top,0px));z-index:5;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:20px;padding:7px 12px;font-size:14px;cursor:pointer;backdrop-filter:blur(8px)}
+#cf{position:fixed;inset:0;pointer-events:none;z-index:4;width:100%;height:100%}
+</style></head><body>
+<button id="mus" aria-label="toggle music">♪ Music</button><canvas id="cf"></canvas>
+
+<section class="sc on c" id="s0"><div style="height:12vh"></div><div class="bell">🔔</div><div class="tag">NEW ORDER RECEIVED</div><h1 style="font-size:38px">Order #001</h1><p class="mut">Something was packed with love,<br>just for the two of you.</p><div class="card" style="margin-top:20px">Tip: turn your volume up ♪<br><small class="mut">Best opened together</small></div><button class="btn" onclick="start()">Track my order →</button></section>
+
+<section class="sc" id="s1"><div class="tag c">ORDER #001 · ONE UNEXPECTED HAPPINESS</div><h2 class="c" id="eta">Arriving in 3 min</h2>
+<div class="tr" id="tr"></div><button class="btn" id="b1" style="display:none" onclick="go(2)">Open my order 🎁</button></section>
+
+<section class="sc" id="s2"><div class="tag c">SURPRISE #1</div><h2 class="c">Scratch to open</h2><p class="c mut">Use your finger like a scratch card</p>
+<div class="sw"><div class="msg c"><h2>To my favourite two people 💛</h2><p>No festival. No birthday. No reason at all.</p><p>Just a reminder that the way you two stand together, laugh together and grow together is something special — and we noticed.</p><p class="mut"><i>— With love, from us</i></p></div><canvas id="scr"></canvas></div>
+<button class="btn" id="b2" style="display:none" onclick="go(3)">See your story →</button></section>
+
+<section class="sc" id="s3"><div class="tag c">SURPRISE #2</div><h2 class="c">Your story, in frames</h2><div class="tl">
+<div class="it"><b>That look 😍</b><img data-m src="images/photo_a.jpg" alt=""><p class="mut">Some people look at each other like the whole world went quiet.</p></div>
+<div class="it"><b>Late-night calls</b><img src="images/photo_b.jpg" alt=""><p class="mut">Tired, messy, laughing — still the best part of the day.</p></div>
+<div class="it"><b>Blessings together 🙏</b><img data-m src="images/photo_c.jpg" alt=""><p class="mut">Quiet moments that mean the most.</p></div>
+<div class="it"><b>Then life got sweeter</b><img data-m src="images/photo_d.jpg" alt=""><p class="mut">Smiles that say everything.</p></div>
+<div class="it"><b>A little princess, a big party 👑</b><img data-m src="images/photo_e.jpg" alt=""><p class="mut">Sparkles, balloons and a family that glows.</p></div></div>
+<button class="btn" onclick="go(7)">Next surprise →</button></section>
+
+<section class="sc c" id="s7"><div class="tag">SURPRISE #3</div><h2>One more question 💍</h2><img data-m src="images/photo_g.jpg" alt="" style="width:100%;border-radius:20px;box-shadow:0 12px 30px #0004"><p>If you could choose each other all over again…</p><div class="re"><button class="btn" id="yes" onclick="yes()">YES, always 💖</button><button class="btn" id="no" style="background:var(--mut)" onpointerdown="dodge(event)" onmouseenter="dodge(event)">No</button></div><p id="yr" class="mut" style="min-height:3em"></p><button class="btn" onclick="go(8)">Next surprise →</button></section>
+
+<section class="sc" id="s8"><div class="tag c">SURPRISE #4</div><h2 class="c">Your gallery</h2><div class="gal"><img src="images/photo_h.jpg" alt=""><p class="c mut">Frames from your fairytale ✨</p><img src="images/photo_f.jpg" alt=""><p class="c mut">Daddy’s boy-girl, Mummy’s little sunshine 💛</p><img data-m src="images/photo_i.jpg" alt=""><p class="c mut">Ride or die. Literally. 🏍️</p></div><button class="btn" onclick="go(9)">Play a game →</button></section>
+
+<section class="sc" id="s9"><div class="tag c">SURPRISE #5</div><h2 class="c">Memory match</h2><p class="c mut">Find the pairs · Moves: <b id="mv">0</b></p><div id="mg"></div><p id="gm" class="c" style="min-height:2em;font-weight:700"></p><button class="btn" id="gb" onclick="go(10)">Skip →</button></section>
+
+<section class="sc" id="s10"><div class="tag c">SURPRISE #6</div><h2 class="c">What kind of duo are you?</h2><div id="qz"></div></section>
+
+<section class="sc c" id="s11"><div class="tag">SURPRISE #7</div><h2>Love meter</h2><p class="mut">Press and hold the button<br>(better if you both touch it 😉)</p><div class="ring" id="rg"><span id="pc">0%</span></div><p id="lt" style="min-height:3em;font-weight:700">Waiting for hearts…</p><button class="btn hold" id="hb" style="background:var(--gold)">👍👍 Hold here</button><button class="btn" id="lb" style="display:none" onclick="go(12)">Next surprise →</button></section>
+
+<section class="sc c" id="s12"><div class="tag">SURPRISE #8</div><h2>Date night generator</h2><p class="mut">Spin to decide your next date.</p><div class="reel"><small>WHERE</small><b id="r0">?</b></div><div class="reel"><small>DO</small><b id="r1">?</b></div><div class="reel"><small>BONUS</small><b id="r2">?</b></div><button class="btn" onclick="spin()">🎰 Spin</button><button class="btn" style="background:var(--gold)" onclick="go(13)">Next surprise →</button></section>
+
+<section class="sc c" id="s13"><div class="tag">SURPRISE #9</div><h2>Time capsule</h2><div class="lock" id="lk">🔒</div><p id="cp0" class="mut"></p><div class="card" id="cap" style="display:none;text-align:left"><h2>Dear future you,</h2><p>If you’re reading this, a whole year went by since we made this page for no reason at all. We hope you’re still laughing together, still holding hands, and still arguing about who sleeps on which side. Whatever happened this year — you did it together. Keep going. We’re proud of you both.</p><p class="mut"><i>— Your people</i></p></div><button class="btn" onclick="go(4)">On to the envelopes →</button></section>
+
+<section class="sc" id="s4"><div class="tag c">SURPRISE #10</div><h2 class="c">Open when…</h2><p class="c mut">Tap an envelope. Keep them for later too.</p>
+<div class="card env" onclick="this.classList.toggle('o')"><div class="h">💌 …you feel tired <span>+</span></div><div class="b">You’re doing better than you think. Parenting, work, life — you carry so much and still smile. Take a breath. Hold each other. Tomorrow is lighter.</div></div>
+<div class="card env" onclick="this.classList.toggle('o')"><div class="h">💌 …you have an argument <span>+</span></div><div class="b">Remember the girl in the green dress and the guy who couldn’t stop smiling at her. Same two people. Say sorry first, laugh second.</div></div>
+<div class="card env" onclick="this.classList.toggle('o')"><div class="h">💌 …you forget how far you’ve come <span>+</span></div><div class="b">Look at the photos again. From two people to a family. Every hard day was worth this view.</div></div>
+<div class="card env" onclick="this.classList.toggle('o')"><div class="h">💌 …you need a reason to smile <span>+</span></div><div class="b">Look at your little one. That’s the reason. Then look at each other. That’s the second reason.</div></div>
+<button class="btn" onclick="go(5)">Your gift coupons →</button></section>
+
+<section class="sc" id="s5"><div class="tag c">SURPRISE #11</div><h2 class="c">Your coupon wallet</h2><p class="c mut">Tap a coupon to redeem it. Valid forever.</p><div id="cps"></div>
+<button class="btn" onclick="go(6)">Final delivery →</button></section>
+
+<section class="sc c" id="s6"><div style="height:4vh"></div><div class="tag">DELIVERED ✓</div><h1 style="font-size:36px">Surprise! 🎉</h1><div class="ly" id="ly"></div>
+<img src="images/photo_a.jpg" alt="" style="width:78%;border-radius:22px;box-shadow:0 14px 34px #0005"><div class="rc" style="text-align:left"><div><span>Order</span><span>#001</span></div><div><span>Item</span><span>Unexpected happiness</span></div><div><span>Delivery</span><span>Free</span></div><div><span>Reason</span><span>None needed</span></div><hr><div><b>TOTAL</b><b>PRICELESS ♥</b></div></div>
+<button class="btn" onclick="boom();go(0)">Replay from the start</button></section>
+
+<script>
+var $=function(i){return document.getElementById(i)},cur=0;
+function go(n){document.querySelectorAll('.sc').forEach(function(s){s.classList.remove('on')});$('s'+n).classList.add('on');cur=n;window.scrollTo(0,0);if(n==2)initScr();if(n==9)initGame();if(n==6){boom();lyr()}}
+
+// re-propose
+function dodge(e){e.preventDefault();var n=$('no'),w=n.parentNode.clientWidth-n.offsetWidth;n.style.right='auto';n.style.left=Math.random()*w+'px';n.style.top=(Math.random()*70)+'px'}
+function yes(){boom();$('yr').textContent='Good answer. 😉 We knew it. (Also — there was never a “No” button.)'}
+// memory game
+var gd=0;function initGame(){if(gd)return;gd=1;var s=[].slice.call(document.querySelectorAll('img[data-m]')).map(function(i){return i.src}),d=s.concat(s).sort(function(){return Math.random()-.5}),g=$('mg'),op=[],mv=0,dn=0,lk=0;d.forEach(function(v){var e=document.createElement('div');e.className='mc';e.innerHTML='<div class="in"><div class="bk">♥</div><div class="fr"></div></div>';e.querySelector('.fr').style.backgroundImage='url('+v+')';e.onclick=function(){if(lk||e.classList.contains('f'))return;e.classList.add('f');op.push([e,v]);if(op.length==2){mv++;$('mv').textContent=mv;lk=1;if(op[0][1]==op[1][1]){op.forEach(function(o){o[0].classList.add('ok')});op=[];lk=0;if(++dn==s.length){$('gm').textContent='You did it in '+mv+' moves! 💛';$('gb').textContent='Next surprise →';boom()}}else setTimeout(function(){op.forEach(function(o){o[0].classList.remove('f')});op=[];lk=0},900)}};g.appendChild(e)})}
+// quiz
+var QZ=[["Perfect weekend?",["🏍️ A long ride","🛋️ Blanket + movie","🍽️ Eating out, obviously"]],["Who says sorry first?",["She does","He does","Neither — we hug it out"]],["Love language?",["Quality time","Surprises & gifts","Words & hugs"]],["Photo style?",["Candid laughing","Posed & perfect","Whatever baby wants"]]],RS=["Adventure Duo 🏍️ — always chasing the next sunset, the next road, the next laugh.","Cozy Duo 🛋️ — home is your favourite place, as long as you’re both in it.","Happy-Chaos Duo 😂 — loud, loving and never boring. Never change."],qi=0,qs=[0,0,0];
+function qsh(){var q=$('qz');if(qi>=QZ.length){var m=qs.indexOf(Math.max.apply(0,qs));q.innerHTML='<div class="card c" style="margin-top:20px"><h2>You are the…</h2><p style="font-size:18px">'+RS[m]+'</p></div><button class="btn" onclick="go(11)">Next surprise →</button>';boom();return}q.innerHTML='<p class="c mut">Question '+(qi+1)+' of '+QZ.length+'</p><h2 class="c">'+QZ[qi][0]+'</h2>'+QZ[qi][1].map(function(o,i){return '<button class="opt" onclick="qs['+i+']++;qi++;qsh()">'+o+'</button>'}).join('')}qsh();
+// love meter
+var lm=0,lt2;function upd(){$('rg').style.setProperty('--p',lm+'%');$('pc').textContent=lm+'%';$('lt').textContent=lm>=100?'100% — off the charts. Verified by Order #001 ❤️':lm>66?'Measuring forever…':lm>33?'Detecting giggles…':lm>0?'Scanning hearts…':'Waiting for hearts…';if(lm>=100){clearInterval(lt2);$('lb').style.display='block';boom()}}
+function hd(on){clearInterval(lt2);if(on&&lm<100)lt2=setInterval(function(){lm=Math.min(100,lm+2);upd()},60);else if(lm<100){lm=0;upd()}}
+var hb=$('hb');hb.addEventListener('pointerdown',function(e){e.preventDefault();hd(1)});['pointerup','pointerleave','pointercancel'].forEach(function(n){hb.addEventListener(n,function(){hd(0)})});
+// date spin
+var SP=[["Sunset point 🌅","Hilltop café ☕","Old fort steps 🏰","Lakeside bench 🌊","A long night drive 🌙"],["Share one dessert 🍰","Take 20 silly photos 📸","Dance to one song 💃","Walk with no phones 🚶","Cook together 🍳"],["He picks the playlist 🎶","She picks the snacks 🍿","Hold hands the whole time 🤝","Write 3 things you love 💌","Wear matching colours 👕"]];
+function spin(){var n=0,t=setInterval(function(){for(var i=0;i<3;i++)$('r'+i).textContent=SP[i][Math.floor(Math.random()*5)];if(++n>14){clearInterval(t);boom()}},90)}
+// time capsule
+(function(){var u=new Date('2027-10-21T00:00:00'),n=new Date();if(n>=u){$('lk').textContent='🔓';$('cap').style.display='block';$('cp0').textContent='The wait is over.'}else{var d=Math.ceil((u-n)/864e5);$('cp0').innerHTML='Sealed with love.<br>Opens on <b>21 October 2027</b><br>('+d+' days to go) — come back then. 💌'}})();
+// tracker
+var STEPS=[["Order placed","We had this idea and couldn’t wait"],["Packing the happiness","Wrapped with photos, music & love"],["Out for delivery","A tiny rider is on the way 🛵"],["Delivered","Right here, right now"]];
+$('tr').innerHTML=STEPS.map(function(s,i){return '<div class="st" id="t'+i+'"><div class="dot">'+(i+1)+'</div><div><b>'+s[0]+'</b><small>'+s[1]+'</small></div></div>'}).join('');
+function start(){music(true);go(1);[0,2200,4600,7200].forEach(function(t,i){setTimeout(function(){$('t'+i).classList.add('d');$('t'+i).querySelector('.dot').textContent='✓';$('eta').textContent=['Order confirmed','Packing…','Arriving in 1 min','Delivered! 🎁'][i];if(i==3){$('b1').style.display='block';boom()}},t+300)})}
+// scratch
+var sd=0;function initScr(){if(sd)return;sd=1;var c=$('scr'),r=c.getBoundingClientRect();c.width=r.width;c.height=r.height;var x=c.getContext('2d');var g=x.createLinearGradient(0,0,r.width,r.height);g.addColorStop(0,'#d4a24c');g.addColorStop(.5,'#f6dc94');g.addColorStop(1,'#c18a2d');x.fillStyle=g;x.fillRect(0,0,r.width,r.height);x.fillStyle='#6b4a14';x.font='bold 22px Georgia';x.textAlign='center';x.fillText('✨ Scratch here ✨',r.width/2,r.height/2);
+var dn=0,dr=0;function sc(e){if(!dr||dn)return;var b=c.getBoundingClientRect();x.globalCompositeOperation='destination-out';x.beginPath();x.arc(e.clientX-b.left,e.clientY-b.top,26,0,7);x.fill();if(Math.random()<.15){var d=x.getImageData(0,0,c.width,c.height).data,k=0,n=0;for(var i=3;i<d.length;i+=160){n++;if(!d[i])k++}if(k/n>.5){dn=1;c.style.opacity=0;c.style.pointerEvents='none';$('b2').style.display='block';boom()}}}
+c.addEventListener('pointerdown',function(e){dr=1;c.setPointerCapture(e.pointerId);sc(e)});c.addEventListener('pointermove',sc);c.addEventListener('pointerup',function(){dr=0})}
+// coupons
+var CP=[["🤗","One long hug, no phone, no rush"],["🍰","Dessert date — your pick"],["🛋️","One lazy movie night, zero chores"],["🌅","A sunset walk, just the two of you"],["👶","One free baby-sitting evening"],["🍽️","Dinner out — we’re paying"]];
+var used={};try{used=JSON.parse(localStorage.getItem('cp1')||'{}')}catch(e){}
+$('cps').innerHTML=CP.map(function(c,i){return '<div class="cp'+(used[i]?' u':'')+'" onclick="red(this,'+i+')"><span class="e">'+c[0]+'</span><b>'+c[1]+'</b></div>'}).join('');
+function red(el,i){el.classList.toggle('u');used[i]=el.classList.contains('u')?1:0;try{localStorage.setItem('cp1',JSON.stringify(used))}catch(e){}if(used[i])boom()}
+// lyrics
+var LY=["Two hearts, one little light,","Holding hands through day and night,","Every smile is where we’re from,","Home is wherever you two come.","No reason, no day, no one to impress —","Just love, and a little happiness. ♥"],lt;
+function lyr(){clearInterval(lt);var i=0;$('ly').textContent=LY[0];lt=setInterval(function(){i=(i+1)%LY.length;$('ly').textContent=LY[i]},3200)}
+// confetti
+var cv=$('cf'),cx=cv.getContext('2d'),P=[];function rs(){cv.width=innerWidth;cv.height=innerHeight}rs();addEventListener('resize',rs);
+function boom(){for(var i=0;i<130;i++)P.push({x:Math.random()*cv.width,y:-20-Math.random()*cv.height*.5,vy:2+Math.random()*4,vx:Math.random()*2-1,s:6+Math.random()*7,c:['#ff7a9e','#f2c46d','#7be0c3','#a98bff','#fff'][i%5],r:Math.random()*6});if(!ra)ani()}
+var ra=0;function ani(){ra=1;cx.clearRect(0,0,cv.width,cv.height);P=P.filter(function(p){return p.y<cv.height+20});P.forEach(function(p){p.y+=p.vy;p.x+=p.vx+Math.sin(p.y/30);p.r+=.1;cx.fillStyle=p.c;cx.save();cx.translate(p.x,p.y);cx.rotate(p.r);cx.fillRect(-p.s/2,-p.s/4,p.s,p.s/2);cx.restore()});if(P.length)requestAnimationFrame(ani);else ra=0}
+// music: original music-box lullaby (Web Audio)
+var ac,mt,on=false,bar=0;var FQ=function(n){var m={C:0,D:2,E:4,F:5,G:7,A:9,B:11}[n[0]];return 440*Math.pow(2,(m-9+12*(+n[1]-4))/12)};
+var MEL=["E5 . G5 . E5 . D5 C5","C5 . E5 . D5 . C5 A4","A4 . C5 . F5 . E5 D5","D5 . G5 . F5 . D5 B4"],BAS=["C3","A2","F2","G2"],CH=[["C4","E4","G4"],["A3","C4","E4"],["F3","A3","C4"],["G3","B3","D4"]];
+function nt(f,t,d,g,ty){var o=ac.createOscillator(),v=ac.createGain();o.type=ty;o.frequency.value=f;v.gain.setValueAtTime(0,t);v.gain.linearRampToValueAtTime(g,t+.01);v.gain.exponentialRampToValueAtTime(.0001,t+d);o.connect(v).connect(ac.destination);o.start(t);o.stop(t+d+.05)}
+function playBar(){var b=bar%4,t=ac.currentTime+.05,e=.36;MEL[b].split(' ').forEach(function(n,i){if(n!='.'){nt(FQ(n),t+i*e,1.6,.16,'sine');nt(FQ(n)*2,t+i*e,.5,.03,'sine')}});nt(FQ(BAS[b]),t,2.6,.2,'triangle');nt(FQ(BAS[b]),t+4*e,1.6,.14,'triangle');for(var i=0;i<8;i++)nt(FQ(CH[b][i%3]),t+i*e,.9,.045,'triangle');bar++}
+function music(f){try{if(!ac)ac=new(window.AudioContext||window.webkitAudioContext)();if(ac.state=='suspended')ac.resume();if(f==false){on=false;clearInterval(mt);$('mus').textContent='♪ Music off';return}if(on)return;on=true;$('mus').textContent='♪ Music on';playBar();mt=setInterval(playBar,2880)}catch(e){}}
+$('mus').onclick=function(){music(on?false:true)};
+</script></body></html>
