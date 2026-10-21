@@ -1,134 +1,448 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Order #001 · A Surprise For You Two</title>
+<title>For Soundarya &amp; Yoganand</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;1,400&family=Pinyon+Script&family=Jost:wght@300;400;500&display=swap">
+
 <style>
-:root{--bg:#fff4ec;--bg2:#ffe3d6;--ink:#3a1d2e;--mut:#8a6577;--card:#ffffffcc;--acc:#e0527a;--gold:#c58b2b;--line:#e8c9bd;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b0f2e;--bg2:#321545;--ink:#fff3ea;--mut:#c9afc4;--card:#ffffff14;--acc:#ff7a9e;--gold:#f2c46d;--line:#5a3a6e}}
-:root[data-theme="dark"]{--bg:#1b0f2e;--bg2:#321545;--ink:#fff3ea;--mut:#c9afc4;--card:#ffffff14;--acc:#ff7a9e;--gold:#f2c46d;--line:#5a3a6e}
-html{scroll-padding-top:env(safe-area-inset-top,0px)}
-*{box-sizing:border-box}body{margin:0;min-height:100vh;background:linear-gradient(160deg,var(--bg),var(--bg2));color:var(--ink);font:16px/1.5 -apple-system,"Segoe UI",Roboto,sans-serif;overflow-x:hidden}
-h1,h2{font-family:Georgia,"Times New Roman",serif;margin:.2em 0}
-.sc{display:none;min-height:100vh;padding:28px 20px 90px;max-width:480px;margin:0 auto;animation:in .7s}
-.sc.on{display:block}@keyframes in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
-.c{text-align:center}.mut{color:var(--mut)}.tag{letter-spacing:.2em;font-size:12px;color:var(--gold);font-weight:700}
-.btn{display:block;width:100%;margin:22px 0 0;padding:15px;border:0;border-radius:16px;background:var(--acc);color:#fff;font:700 17px inherit;cursor:pointer;box-shadow:0 8px 22px #0003}
-.btn:active{transform:scale(.98)}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:16px;backdrop-filter:blur(6px)}
-.bell{font-size:64px;animation:r 1s infinite}@keyframes r{0%,100%{transform:rotate(0)}20%{transform:rotate(14deg)}40%{transform:rotate(-14deg)}60%{transform:rotate(8deg)}}
-.tr{margin:26px 0 0 14px;position:relative}.tr:before{content:"";position:absolute;left:15px;top:8px;bottom:8px;width:4px;background:var(--line);border-radius:4px}
-.st{display:flex;gap:16px;align-items:center;margin:0 0 42px;position:relative;opacity:.45;transition:.6s}.st.d{opacity:1}
-.dot{width:34px;height:34px;border-radius:50%;background:var(--line);display:grid;place-items:center;color:#fff;font-weight:900;flex:none;transition:.6s}.st.d .dot{background:var(--acc);box-shadow:0 0 0 6px #e0527a33}
-.st b{display:block}.st small{color:var(--mut)}
-.sw{position:relative;margin-top:20px;border-radius:22px;overflow:hidden}.sw .msg{padding:26px 20px;background:var(--card);border:1px solid var(--line);border-radius:22px;min-height:260px}
-.sw canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none;border-radius:22px;transition:opacity .8s}
-.tl{position:relative;margin:10px 0 0;padding-left:22px;border-left:3px solid var(--line)}.tl .it{margin:0 0 30px;position:relative}.tl .it:before{content:"";position:absolute;left:-31px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--acc)}
-.tl img{width:100%;border-radius:18px;display:block;box-shadow:0 10px 26px #0004;margin-top:8px}.tl p{margin:6px 2px 0}
-.env{margin:12px 0;cursor:pointer}.env .h{font-weight:700;display:flex;justify-content:space-between}.env .b{max-height:0;overflow:hidden;transition:.5s;color:var(--mut)}.env.o .b{max-height:240px;margin-top:10px}
-.cp{display:flex;align-items:center;gap:12px;margin:12px 0;border:2px dashed var(--gold);border-radius:16px;padding:14px;background:var(--card);cursor:pointer;position:relative}.cp .e{font-size:28px}.cp.u{opacity:.45}.cp.u:after{content:"REDEEMED";position:absolute;right:12px;top:50%;transform:translateY(-50%) rotate(-10deg);border:2px solid var(--acc);color:var(--acc);padding:2px 8px;border-radius:8px;font-weight:900;font-size:13px}
-.rc{font-family:"Courier New",monospace;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:18px;margin-top:18px}.rc div{display:flex;justify-content:space-between;margin:6px 0}
-.ly{min-height:3.6em;font-family:Georgia,serif;font-size:19px;font-style:italic;margin:18px 0}
-.re{position:relative;height:130px;margin-top:10px}.re .btn{position:absolute;width:48%;margin:0;top:30px}#no{right:0;transition:.25s}#yes{left:0}
-.gal img{width:100%;border-radius:18px;margin:10px 0 2px;box-shadow:0 10px 26px #0004;display:block}
-#mg{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}.mc{aspect-ratio:3/4;perspective:600px;cursor:pointer}.mc .in{position:relative;width:100%;height:100%;transition:.5s;transform-style:preserve-3d}.mc.f .in{transform:rotateY(180deg)}.mc .bk,.mc .fr{position:absolute;inset:0;border-radius:14px;backface-visibility:hidden}.mc .bk{background:linear-gradient(135deg,var(--acc),var(--gold));display:grid;place-items:center;font-size:30px;color:#fff}.mc .fr{transform:rotateY(180deg);background-size:cover;background-position:center;border:2px solid var(--gold)}.mc.ok .in{box-shadow:0 0 0 3px var(--acc);border-radius:14px}
-.opt{display:block;width:100%;margin:10px 0;padding:14px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:600 16px inherit;text-align:left;cursor:pointer}.opt:active{background:var(--acc);color:#fff}
-.ring{width:190px;height:190px;border-radius:50%;margin:24px auto;display:grid;place-items:center;font:900 44px Georgia;background:conic-gradient(var(--acc) var(--p,0%),var(--line) 0)}.ring span{width:158px;height:158px;border-radius:50%;background:var(--bg);display:grid;place-items:center}
-.hold{touch-action:none;user-select:none;-webkit-user-select:none}.reel{display:flex;gap:10px;align-items:center;margin:10px 0;padding:14px;border-radius:14px;background:var(--card);border:1px solid var(--line)}.reel small{color:var(--gold);font-weight:800;width:62px}.reel b{font-size:17px}
-.lock{font-size:60px}
-#mus{position:fixed;right:14px;top:calc(12px + env(safe-area-inset-top,0px));z-index:5;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:20px;padding:7px 12px;font-size:14px;cursor:pointer;backdrop-filter:blur(8px)}
-#cf{position:fixed;inset:0;pointer-events:none;z-index:4;width:100%;height:100%}
-</style></head><body>
-<button id="mus" aria-label="toggle music">♪ Music</button><canvas id="cf"></canvas>
+:root{
+  --night:#0b0d14; --ivory:#f7f1e8; --gold:#e8cfa0; --gold2:#b8935a; --blush:#f3b6c2; --muted:#9a95a6;
+  --glass:rgba(255,255,255,.05); --line:rgba(232,207,160,.28);
+  --display:"Bodoni Moda", Didot, Georgia, serif;
+  --script:"Pinyon Script", "Snell Roundhand", cursive;
+  --body:"Jost", "Helvetica Neue", Arial, sans-serif;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{background:radial-gradient(120% 80% at 50% 0%,#161a2a 0%,var(--night) 60%);color:var(--ivory);font-family:var(--body);font-weight:300;
+  overflow:hidden;-webkit-tap-highlight-color:transparent;user-select:none}
+canvas.fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none}
+#stars{z-index:1}#fx{z-index:40}
+.vignette{position:fixed;inset:0;z-index:38;pointer-events:none;background:radial-gradient(ellipse at center,transparent 50%,rgba(3,4,8,.8) 100%)}
 
-<section class="sc on c" id="s0"><div style="height:12vh"></div><div class="bell">🔔</div><div class="tag">NEW ORDER RECEIVED</div><h1 style="font-size:38px">Order #001</h1><p class="mut">Something was packed with love,<br>just for the two of you.</p><div class="card" style="margin-top:20px">Tip: turn your volume up ♪<br><small class="mut">Best opened together</small></div><button class="btn" onclick="start()">Track my order →</button></section>
+/* every screen fits any window: centred when there is room, scrollable when there isn't */
+.screen{position:fixed;inset:0;z-index:10;display:grid;place-items:start center;padding:24px 18px;overflow-y:auto;
+  opacity:0;pointer-events:none;transition:opacity 1.2s ease}
+.screen > *{margin-block:auto}
+.screen.on{opacity:1;pointer-events:auto}
+.stack{display:grid;gap:18px;justify-items:center;text-align:center;max-width:560px;width:100%}
+.eyebrow{font-size:11px;letter-spacing:.5em;text-transform:uppercase;color:var(--gold);font-weight:400}
+.script{font-family:var(--script);font-weight:400;line-height:1;margin:0;color:var(--gold);
+  background:linear-gradient(180deg,#fff3dc,#e8cfa0 45%,#b8935a);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.serif{font-family:var(--display);font-style:italic;font-weight:400;margin:0;line-height:1.25}
+.lead{font-family:var(--display);font-style:italic;font-size:clamp(20px,min(5.4vw,4vh),30px);line-height:1.35;margin:0;max-width:22ch}
+.hint{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin:0;animation:breathe 2.4s ease-in-out infinite}
+@keyframes breathe{50%{opacity:.35}}
+.btn{font:400 13px var(--body);letter-spacing:.3em;text-transform:uppercase;color:var(--night);cursor:pointer;
+  background:linear-gradient(135deg,#fff1d6,var(--gold) 50%,var(--gold2));border:0;border-radius:999px;padding:16px 34px;
+  box-shadow:0 0 0 1px rgba(255,255,255,.3) inset,0 14px 40px rgba(232,207,160,.25)}
+.btn.ghost{background:transparent;color:var(--gold);box-shadow:0 0 0 1px var(--line) inset}
+.later{opacity:0;transition:opacity 1.2s}.later.in{opacity:1}
+.lines{display:grid;gap:4px}
+.lines p{margin:0;font-family:var(--display);font-style:italic;font-size:clamp(18px,min(4.8vw,3.6vh),26px);line-height:1.35;
+  opacity:0;transform:translateY(8px);transition:opacity 1.2s,transform 1.2s}
+.lines p.in{opacity:1;transform:none}
+.rule{width:60px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
 
-<section class="sc" id="s1"><div class="tag c">ORDER #001 · ONE UNEXPECTED HAPPINESS</div><h2 class="c" id="eta">Arriving in 3 min</h2>
-<div class="tr" id="tr"></div><button class="btn" id="b1" style="display:none" onclick="go(2)">Open my order 🎁</button></section>
+/* opening: visible by default, the animation only plays the entrance */
+.rings{width:min(220px,56vw,22vh)}
+.rings circle{fill:none;stroke:#e8cfa0;stroke-width:5;stroke-linecap:round;stroke-dasharray:420;stroke-dashoffset:0;animation:draw 2.6s cubic-bezier(.6,0,.2,1) both}
+.rings circle:nth-child(2){animation-delay:.7s}
+@keyframes draw{from{stroke-dashoffset:420}}
+.reveal{animation:rise 1.4s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(12px)}}
+#s0 h1{font-size:clamp(44px,min(15vw,11vh),110px);line-height:1.05}
+#s0 h1 .amp{display:block;font-size:.55em;margin:.05em 0}
 
-<section class="sc" id="s2"><div class="tag c">SURPRISE #1</div><h2 class="c">Scratch to open</h2><p class="c mut">Use your finger like a scratch card</p>
-<div class="sw"><div class="msg c"><h2>To my favourite two people 💛</h2><p>No festival. No birthday. No reason at all.</p><p>Just a reminder that the way you two stand together, laugh together and grow together is something special — and we noticed.</p><p class="mut"><i>— With love, from us</i></p></div><canvas id="scr"></canvas></div>
-<button class="btn" id="b2" style="display:none" onclick="go(3)">See your story →</button></section>
+.polaroid{position:relative;border:0;cursor:pointer;width:min(300px,74vw,46vh);padding:14px 14px 64px;background:#fbf8f2;border-radius:3px;
+  box-shadow:0 40px 80px rgba(0,0,0,.6);transform:rotate(-3deg)}
+.polaroid .ph{aspect-ratio:1;overflow:hidden;background:#1d1b1a}
+.polaroid img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(2.4) contrast(.25) sepia(1) blur(8px);opacity:.25;
+  transition:filter 4.5s ease,opacity 3.5s ease}
+.polaroid.dev img{filter:none;opacity:1}
+.polaroid .cap{position:absolute;left:0;right:0;bottom:16px;font:400 26px var(--script);color:#5a4632;text-align:center}
+.polaroid.shake{animation:shake .7s ease}
+@keyframes shake{20%{transform:rotate(-8deg) translateX(-8px)}40%{transform:rotate(3deg) translateX(8px)}60%{transform:rotate(-6deg) translateX(-5px)}100%{transform:rotate(-3deg)}}
 
-<section class="sc" id="s3"><div class="tag c">SURPRISE #2</div><h2 class="c">Your story, in frames</h2><div class="tl">
-<div class="it"><b>That look 😍</b><img data-m src="images/photo_a.jpg" alt=""><p class="mut">Some people look at each other like the whole world went quiet.</p></div>
-<div class="it"><b>Late-night calls</b><img src="images/photo_b.jpg" alt=""><p class="mut">Tired, messy, laughing — still the best part of the day.</p></div>
-<div class="it"><b>Blessings together 🙏</b><img data-m src="images/photo_c.jpg" alt=""><p class="mut">Quiet moments that mean the most.</p></div>
-<div class="it"><b>Then life got sweeter</b><img data-m src="images/photo_d.jpg" alt=""><p class="mut">Smiles that say everything.</p></div>
-<div class="it"><b>A little princess, a big party 👑</b><img data-m src="images/photo_e.jpg" alt=""><p class="mut">Sparkles, balloons and a family that glows.</p></div></div>
-<button class="btn" onclick="go(7)">Next surprise →</button></section>
+.halves{position:relative;width:min(300px,74vw,40vh);aspect-ratio:4/5}
+.half{position:absolute;top:0;bottom:0;width:50%;background-size:200% 100%;background-repeat:no-repeat;box-shadow:0 30px 60px rgba(0,0,0,.55);transition:transform .15s linear,filter .6s}
+.half.l{left:0;background-position:left center;border-radius:14px 0 0 14px}
+.half.r{right:0;background-position:right center;border-radius:0 14px 14px 0}
+.halves.joined{filter:drop-shadow(0 0 30px rgba(232,207,160,.45))}
+.slider{width:min(300px,78vw);-webkit-appearance:none;appearance:none;height:4px;border-radius:4px;outline:none;
+  background:linear-gradient(90deg,var(--gold) var(--p,0%),rgba(255,255,255,.15) var(--p,0%))}
+.slider::-webkit-slider-thumb{-webkit-appearance:none;width:44px;height:44px;border-radius:50%;cursor:grab;border:0;
+  background:radial-gradient(circle at 35% 30%,#fff1d6,var(--gold) 55%,var(--gold2));box-shadow:0 0 20px rgba(232,207,160,.6)}
+.slider::-moz-range-thumb{width:44px;height:44px;border-radius:50%;border:0;background:var(--gold)}
 
-<section class="sc c" id="s7"><div class="tag">SURPRISE #3</div><h2>One more question 💍</h2><img data-m src="images/photo_g.jpg" alt="" style="width:100%;border-radius:20px;box-shadow:0 12px 30px #0004"><p>If you could choose each other all over again…</p><div class="re"><button class="btn" id="yes" onclick="yes()">YES, always 💖</button><button class="btn" id="no" style="background:var(--mut)" onpointerdown="dodge(event)" onmouseenter="dodge(event)">No</button></div><p id="yr" class="mut" style="min-height:3em"></p><button class="btn" onclick="go(8)">Next surprise →</button></section>
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;width:min(460px,100%,62vh)}
+.rc{border:0;padding:0;background:none;cursor:pointer;aspect-ratio:3/4;perspective:800px}
+.rc .in{position:relative;display:block;width:100%;height:100%;transform-style:preserve-3d;transition:transform .9s cubic-bezier(.3,1.3,.5,1)}
+.rc.flip .in{transform:rotateY(180deg)}
+.rc .f,.rc .b{position:absolute;inset:0;border-radius:12px;backface-visibility:hidden;-webkit-backface-visibility:hidden;display:grid;place-items:center;padding:10px}
+.rc .f{background:linear-gradient(150deg,#1d2236,#11131d);box-shadow:inset 0 0 0 1px var(--line);font:400 40px var(--script);color:var(--gold)}
+.rc .b{transform:rotateY(180deg);background:linear-gradient(160deg,#fff6e6,#efdcb8);color:#3d2f22;font:italic 400 clamp(12px,3.3vw,15px)/1.3 var(--display)}
 
-<section class="sc" id="s8"><div class="tag c">SURPRISE #4</div><h2 class="c">Your gallery</h2><div class="gal"><img src="images/photo_h.jpg" alt=""><p class="c mut">Frames from your fairytale ✨</p><img src="images/photo_f.jpg" alt=""><p class="c mut">Daddy’s boy-girl, Mummy’s little sunshine 💛</p><img data-m src="images/photo_i.jpg" alt=""><p class="c mut">Ride or die. Literally. 🏍️</p></div><button class="btn" onclick="go(9)">Play a game →</button></section>
+.book{position:relative;width:min(300px,76vw,48vh);aspect-ratio:3/4.2;perspective:1400px;cursor:pointer;border:0;padding:0;background:none}
+.page{position:absolute;inset:0;border-radius:4px 12px 12px 4px;background:#fbf6ec;box-shadow:0 30px 70px rgba(0,0,0,.6);overflow:hidden;display:grid;grid-template-rows:62% 1fr}
+.page img{width:100%;height:100%;object-fit:cover;display:block}
+.page .txt{display:grid;place-items:center;padding:10px 14px;color:#4a3a2b;font:italic 400 clamp(14px,4vw,19px)/1.35 var(--display);text-align:center}
+.cover{position:absolute;inset:0;transform-origin:left center;transform-style:preserve-3d;transition:transform 1.6s cubic-bezier(.6,.05,.3,1);z-index:2}
+.cover .front,.cover .back{position:absolute;inset:0;border-radius:4px 12px 12px 4px;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.cover .front{background:linear-gradient(135deg,#3a1e2a,#22121b);box-shadow:inset 0 0 0 1px rgba(232,207,160,.4);display:grid;place-content:center;gap:10px;text-align:center}
+.cover .back{transform:rotateY(180deg);background:#efe6d6}
+.book.open .cover{transform:rotateY(-165deg)}
 
-<section class="sc" id="s9"><div class="tag c">SURPRISE #5</div><h2 class="c">Memory match</h2><p class="c mut">Find the pairs · Moves: <b id="mv">0</b></p><div id="mg"></div><p id="gm" class="c" style="min-height:2em;font-weight:700"></p><button class="btn" id="gb" onclick="go(10)">Skip →</button></section>
+.heartWrap{position:relative;width:min(330px,82vw,50vh);aspect-ratio:1}
+.heartImg{position:absolute;inset:0;background-size:cover;background-position:center;
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 92'%3E%3Cpath d='M50 90 C20 68 0 50 0 27 C0 11 12 0 27 0 C37 0 45 6 50 14 C55 6 63 0 73 0 C88 0 100 11 100 27 C100 50 80 68 50 90Z'/%3E%3C/svg%3E") center/contain no-repeat;
+          mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 92'%3E%3Cpath d='M50 90 C20 68 0 50 0 27 C0 11 12 0 27 0 C37 0 45 6 50 14 C55 6 63 0 73 0 C88 0 100 11 100 27 C100 50 80 68 50 90Z'/%3E%3C/svg%3E") center/contain no-repeat;
+  animation:beat 1.6s ease-in-out infinite}
+@keyframes beat{0%,100%{transform:scale(1)}15%{transform:scale(1.04)}30%{transform:scale(1)}45%{transform:scale(1.03)}}
 
-<section class="sc" id="s10"><div class="tag c">SURPRISE #6</div><h2 class="c">What kind of duo are you?</h2><div id="qz"></div></section>
+.task{position:relative;width:min(370px,92vw);padding:30px 22px 26px;border-radius:22px;display:grid;gap:14px;justify-items:center;text-align:center;margin-top:14px;
+  background:linear-gradient(160deg,rgba(255,255,255,.08),rgba(255,255,255,.02));box-shadow:inset 0 0 0 1px var(--line),0 30px 80px rgba(0,0,0,.5)}
+.task .tag{font-size:10px;letter-spacing:.45em;text-transform:uppercase;color:var(--night);background:linear-gradient(135deg,#fff1d6,var(--gold));
+  padding:6px 12px 6px 16px;border-radius:999px;position:absolute;top:-13px;left:50%;transform:translateX(-50%);white-space:nowrap}
+.task h2{font-family:var(--script);font-weight:400;font-size:clamp(40px,min(12vw,8vh),60px);line-height:1;margin:6px 0 0;color:var(--gold)}
+.task .desc{margin:0;font-family:var(--display);font-style:italic;font-size:clamp(16px,4.4vw,20px);line-height:1.45;max-width:28ch}
+.stamp{position:absolute;right:-10px;bottom:-14px;width:84px;height:84px;border-radius:50%;display:grid;place-items:center;
+  border:2px dashed var(--gold);color:var(--gold);font:400 11px var(--body);letter-spacing:.25em;text-transform:uppercase;background:rgba(11,13,20,.85);
+  transform:rotate(-14deg) scale(0);transition:transform .6s cubic-bezier(.2,1.6,.4,1)}
+.stamp.in{transform:rotate(-14deg) scale(1)}
+.holdRow{display:flex;gap:26px;justify-content:center}
+.holdH{width:100px;height:100px;border:0;padding:0;background:none;cursor:pointer;touch-action:none;position:relative;transition:transform .25s}
+.holdH svg{width:100%;height:100%;overflow:visible}
+.holdH .lbl{position:absolute;left:0;right:0;top:36%;font:400 30px var(--script);color:#fff6ea}
+.holdH.on{transform:scale(1.12)}
+.ring{width:120px;height:120px}
+.ring circle{fill:none;stroke-width:6}
+.ring .bgc{stroke:rgba(255,255,255,.1)}
+.ring .fg{stroke:#e8cfa0;stroke-linecap:round;transform:rotate(-90deg);transform-origin:50% 50%;stroke-dasharray:352;stroke-dashoffset:352}
+.ring text{fill:var(--ivory);font:400 44px var(--display);text-anchor:middle;dominant-baseline:central}
+.checks{display:grid;gap:10px;width:100%}
+.chk{display:flex;align-items:center;gap:14px;width:100%;padding:14px 16px;border-radius:14px;border:0;cursor:pointer;color:var(--ivory);text-align:left;
+  background:rgba(255,255,255,.05);box-shadow:inset 0 0 0 1px var(--line);font:400 15px var(--body)}
+.chk .box{width:26px;height:26px;border-radius:50%;flex:none;box-shadow:inset 0 0 0 1.5px var(--gold);display:grid;place-items:center;color:var(--night);font-size:15px}
+.chk.on{background:rgba(232,207,160,.16)}
+.chk.on .box{background:var(--gold)}
 
-<section class="sc c" id="s11"><div class="tag">SURPRISE #7</div><h2>Love meter</h2><p class="mut">Press and hold the button<br>(better if you both touch it 😉)</p><div class="ring" id="rg"><span id="pc">0%</span></div><p id="lt" style="min-height:3em;font-weight:700">Waiting for hearts…</p><button class="btn hold" id="hb" style="background:var(--gold)">👍👍 Hold here</button><button class="btn" id="lb" style="display:none" onclick="go(12)">Next surprise →</button></section>
+@media (max-height:720px){ .stack{gap:12px} .btn{padding:13px 28px} }
 
-<section class="sc c" id="s12"><div class="tag">SURPRISE #8</div><h2>Date night generator</h2><p class="mut">Spin to decide your next date.</p><div class="reel"><small>WHERE</small><b id="r0">?</b></div><div class="reel"><small>DO</small><b id="r1">?</b></div><div class="reel"><small>BONUS</small><b id="r2">?</b></div><button class="btn" onclick="spin()">🎰 Spin</button><button class="btn" style="background:var(--gold)" onclick="go(13)">Next surprise →</button></section>
+#mus{position:fixed;z-index:45;right:14px;top:14px;width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:var(--glass);color:var(--gold);font-size:16px;cursor:pointer}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<canvas id="stars" class="fx"></canvas>
+<div class="vignette"></div>
+<canvas id="fx" class="fx"></canvas>
+<button id="mus" hidden aria-label="Music on or off">♪</button>
 
-<section class="sc c" id="s13"><div class="tag">SURPRISE #9</div><h2>Time capsule</h2><div class="lock" id="lk">🔒</div><p id="cp0" class="mut"></p><div class="card" id="cap" style="display:none;text-align:left"><h2>Dear future you,</h2><p>If you’re reading this, a whole year went by since we made this page for no reason at all. We hope you’re still laughing together, still holding hands, and still arguing about who sleeps on which side. Whatever happened this year — you did it together. Keep going. We’re proud of you both.</p><p class="mut"><i>— Your people</i></p></div><button class="btn" onclick="go(4)">On to the envelopes →</button></section>
+<section class="screen on" id="s0">
+  <div class="stack">
+    <svg class="rings" viewBox="0 0 220 130" aria-hidden="true"><circle cx="80" cy="65" r="52"/><circle cx="140" cy="65" r="52"/></svg>
+    <div class="eyebrow reveal" style="animation-delay:1.6s" id="i1"></div>
+    <h1 class="script reveal" style="animation-delay:2s" id="i2"></h1>
+    <p class="lead reveal" style="animation-delay:2.8s" id="i3"></p>
+    <button class="btn reveal" style="animation-delay:3.6s" id="begin"></button>
+  </div>
+</section>
 
-<section class="sc" id="s4"><div class="tag c">SURPRISE #10</div><h2 class="c">Open when…</h2><p class="c mut">Tap an envelope. Keep them for later too.</p>
-<div class="card env" onclick="this.classList.toggle('o')"><div class="h">💌 …you feel tired <span>+</span></div><div class="b">You’re doing better than you think. Parenting, work, life — you carry so much and still smile. Take a breath. Hold each other. Tomorrow is lighter.</div></div>
-<div class="card env" onclick="this.classList.toggle('o')"><div class="h">💌 …you have an argument <span>+</span></div><div class="b">Remember the girl in the green dress and the guy who couldn’t stop smiling at her. Same two people. Say sorry first, laugh second.</div></div>
-<div class="card env" onclick="this.classList.toggle('o')"><div class="h">💌 …you forget how far you’ve come <span>+</span></div><div class="b">Look at the photos again. From two people to a family. Every hard day was worth this view.</div></div>
-<div class="card env" onclick="this.classList.toggle('o')"><div class="h">💌 …you need a reason to smile <span>+</span></div><div class="b">Look at your little one. That’s the reason. Then look at each other. That’s the second reason.</div></div>
-<button class="btn" onclick="go(5)">Your gift coupons →</button></section>
-
-<section class="sc" id="s5"><div class="tag c">SURPRISE #11</div><h2 class="c">Your coupon wallet</h2><p class="c mut">Tap a coupon to redeem it. Valid forever.</p><div id="cps"></div>
-<button class="btn" onclick="go(6)">Final delivery →</button></section>
-
-<section class="sc c" id="s6"><div style="height:4vh"></div><div class="tag">DELIVERED ✓</div><h1 style="font-size:36px">Surprise! 🎉</h1><div class="ly" id="ly"></div>
-<img src="images/photo_a.jpg" alt="" style="width:78%;border-radius:22px;box-shadow:0 14px 34px #0005"><div class="rc" style="text-align:left"><div><span>Order</span><span>#001</span></div><div><span>Item</span><span>Unexpected happiness</span></div><div><span>Delivery</span><span>Free</span></div><div><span>Reason</span><span>None needed</span></div><hr><div><b>TOTAL</b><b>PRICELESS ♥</b></div></div>
-<button class="btn" onclick="boom();go(0)">Replay from the start</button></section>
+<section class="screen" id="stage"></section>
+<audio id="song" preload="auto" loop></audio>
 
 <script>
-var $=function(i){return document.getElementById(i)},cur=0;
-function go(n){document.querySelectorAll('.sc').forEach(function(s){s.classList.remove('on')});$('s'+n).classList.add('on');cur=n;window.scrollTo(0,0);if(n==2)initScr();if(n==9)initGame();if(n==6){boom();lyr()}}
+/* ================== EDIT EVERYTHING HERE ================== */
+const FILM = {
+  img: ["Order7 Image1.jpeg", "Order7 Image2.jpeg", "Order7 Image3.jpeg", "Order7 Image4.jpeg"],
+  song: "Order7.mpeg",
+  him: "Yoganand", her: "Soundarya", child: "Vrinda",
+  intro: { eyebrow: "a little film for", line: "No occasion. No reason. Just you two, and your little Vrinda.", button: "Begin" },
+  stars: { line: "Out of eight billion people, two hearts somehow found their way to each other.",
+           child: "And then came Vrinda, the brightest star of all." },
+  polaroid: { eyebrow: "moment one", caption: "Soundarya & Yoganand", hint: "tap the photo to develop it",
+              lines: ["Some moments don't need a reason.", "They just need the two of you,", "standing exactly like this."] },
+  halves: { eyebrow: "moment two", hint: "slide to bring them together",
+            lines: ["Soundarya, you're wonderful.", "Yoganand, so are you.", "Together, you're something else entirely."] },
+  reasons: { title: "No reason? Here are a few anyway.", hint: "tap each card",
+             cards: ["The way you laugh at the same silly things", "How you both light up around Vrinda",
+                     "The quiet way you take care of each other", "Your perfectly matching chaos",
+                     "How you fit, like you were made to", "Because Vrinda gets to grow up watching love like yours"] },
+  book: { coverTop: "the story of", coverTitle: "Us", hint: "tap to open the book",
+          lines: ["Every love story is beautiful,", "but yours, with little Vrinda in it,", "is my favourite one to watch."] },
+  heart: { eyebrow: "simply because", lines: ["Soundarya & Yoganand,", "you are beautiful together.", "Vrinda is so lucky to have you both."] },
+  tasks: {
+    hold: { tag: "task 1 of 3", title: "Hold on together", left: "S", right: "Y",
+            desc: "Soundarya, put a finger on one heart. Yoganand, put yours on the other. Hold together until the ring fills.",
+            done: "See? You're always stronger together." },
+    hug:  { tag: "task 2 of 3", title: "The family hug", seconds: 10, start: "Start the hug",
+            desc: "Put the phone down for a moment and give Vrinda the biggest family hug. Ten whole seconds, no cheating.",
+            done: "The best ten seconds of the day." },
+    say:  { tag: "task 3 of 3", title: "Say it out loud",
+            desc: "Look at each other and say one thing you love about the other. Tap your name once you've said it.",
+            done: "Some words are better heard than read." }
+  },
+  lanterns: { title: "Make a wish together", hint: "tap the sky to release a lantern",
+              end1: "May your love always rise like this.", end2: "Stay this beautiful, Soundarya, Yoganand & Vrinda." }
+};
+/* ========================================================== */
 
-// re-propose
-function dodge(e){e.preventDefault();var n=$('no'),w=n.parentNode.clientWidth-n.offsetWidth;n.style.right='auto';n.style.left=Math.random()*w+'px';n.style.top=(Math.random()*70)+'px'}
-function yes(){boom();$('yr').textContent='Good answer. 😉 We knew it. (Also — there was never a “No” button.)'}
-// memory game
-var gd=0;function initGame(){if(gd)return;gd=1;var s=[].slice.call(document.querySelectorAll('img[data-m]')).map(function(i){return i.src}),d=s.concat(s).sort(function(){return Math.random()-.5}),g=$('mg'),op=[],mv=0,dn=0,lk=0;d.forEach(function(v){var e=document.createElement('div');e.className='mc';e.innerHTML='<div class="in"><div class="bk">♥</div><div class="fr"></div></div>';e.querySelector('.fr').style.backgroundImage='url('+v+')';e.onclick=function(){if(lk||e.classList.contains('f'))return;e.classList.add('f');op.push([e,v]);if(op.length==2){mv++;$('mv').textContent=mv;lk=1;if(op[0][1]==op[1][1]){op.forEach(function(o){o[0].classList.add('ok')});op=[];lk=0;if(++dn==s.length){$('gm').textContent='You did it in '+mv+' moves! 💛';$('gb').textContent='Next surprise →';boom()}}else setTimeout(function(){op.forEach(function(o){o[0].classList.remove('f')});op=[];lk=0},900)}};g.appendChild(e)})}
-// quiz
-var QZ=[["Perfect weekend?",["🏍️ A long ride","🛋️ Blanket + movie","🍽️ Eating out, obviously"]],["Who says sorry first?",["She does","He does","Neither — we hug it out"]],["Love language?",["Quality time","Surprises & gifts","Words & hugs"]],["Photo style?",["Candid laughing","Posed & perfect","Whatever baby wants"]]],RS=["Adventure Duo 🏍️ — always chasing the next sunset, the next road, the next laugh.","Cozy Duo 🛋️ — home is your favourite place, as long as you’re both in it.","Happy-Chaos Duo 😂 — loud, loving and never boring. Never change."],qi=0,qs=[0,0,0];
-function qsh(){var q=$('qz');if(qi>=QZ.length){var m=qs.indexOf(Math.max.apply(0,qs));q.innerHTML='<div class="card c" style="margin-top:20px"><h2>You are the…</h2><p style="font-size:18px">'+RS[m]+'</p></div><button class="btn" onclick="go(11)">Next surprise →</button>';boom();return}q.innerHTML='<p class="c mut">Question '+(qi+1)+' of '+QZ.length+'</p><h2 class="c">'+QZ[qi][0]+'</h2>'+QZ[qi][1].map(function(o,i){return '<button class="opt" onclick="qs['+i+']++;qi++;qsh()">'+o+'</button>'}).join('')}qsh();
-// love meter
-var lm=0,lt2;function upd(){$('rg').style.setProperty('--p',lm+'%');$('pc').textContent=lm+'%';$('lt').textContent=lm>=100?'100% — off the charts. Verified by Order #001 ❤️':lm>66?'Measuring forever…':lm>33?'Detecting giggles…':lm>0?'Scanning hearts…':'Waiting for hearts…';if(lm>=100){clearInterval(lt2);$('lb').style.display='block';boom()}}
-function hd(on){clearInterval(lt2);if(on&&lm<100)lt2=setInterval(function(){lm=Math.min(100,lm+2);upd()},60);else if(lm<100){lm=0;upd()}}
-var hb=$('hb');hb.addEventListener('pointerdown',function(e){e.preventDefault();hd(1)});['pointerup','pointerleave','pointercancel'].forEach(function(n){hb.addEventListener(n,function(){hd(0)})});
-// date spin
-var SP=[["Sunset point 🌅","Hilltop café ☕","Old fort steps 🏰","Lakeside bench 🌊","A long night drive 🌙"],["Share one dessert 🍰","Take 20 silly photos 📸","Dance to one song 💃","Walk with no phones 🚶","Cook together 🍳"],["He picks the playlist 🎶","She picks the snacks 🍿","Hold hands the whole time 🤝","Write 3 things you love 💌","Wear matching colours 👕"]];
-function spin(){var n=0,t=setInterval(function(){for(var i=0;i<3;i++)$('r'+i).textContent=SP[i][Math.floor(Math.random()*5)];if(++n>14){clearInterval(t);boom()}},90)}
-// time capsule
-(function(){var u=new Date('2027-10-21T00:00:00'),n=new Date();if(n>=u){$('lk').textContent='🔓';$('cap').style.display='block';$('cp0').textContent='The wait is over.'}else{var d=Math.ceil((u-n)/864e5);$('cp0').innerHTML='Sealed with love.<br>Opens on <b>21 October 2027</b><br>('+d+' days to go) — come back then. 💌'}})();
-// tracker
-var STEPS=[["Order placed","We had this idea and couldn’t wait"],["Packing the happiness","Wrapped with photos, music & love"],["Out for delivery","A tiny rider is on the way 🛵"],["Delivered","Right here, right now"]];
-$('tr').innerHTML=STEPS.map(function(s,i){return '<div class="st" id="t'+i+'"><div class="dot">'+(i+1)+'</div><div><b>'+s[0]+'</b><small>'+s[1]+'</small></div></div>'}).join('');
-function start(){music(true);go(1);[0,2200,4600,7200].forEach(function(t,i){setTimeout(function(){$('t'+i).classList.add('d');$('t'+i).querySelector('.dot').textContent='✓';$('eta').textContent=['Order confirmed','Packing…','Arriving in 1 min','Delivered! 🎁'][i];if(i==3){$('b1').style.display='block';boom()}},t+300)})}
-// scratch
-var sd=0;function initScr(){if(sd)return;sd=1;var c=$('scr'),r=c.getBoundingClientRect();c.width=r.width;c.height=r.height;var x=c.getContext('2d');var g=x.createLinearGradient(0,0,r.width,r.height);g.addColorStop(0,'#d4a24c');g.addColorStop(.5,'#f6dc94');g.addColorStop(1,'#c18a2d');x.fillStyle=g;x.fillRect(0,0,r.width,r.height);x.fillStyle='#6b4a14';x.font='bold 22px Georgia';x.textAlign='center';x.fillText('✨ Scratch here ✨',r.width/2,r.height/2);
-var dn=0,dr=0;function sc(e){if(!dr||dn)return;var b=c.getBoundingClientRect();x.globalCompositeOperation='destination-out';x.beginPath();x.arc(e.clientX-b.left,e.clientY-b.top,26,0,7);x.fill();if(Math.random()<.15){var d=x.getImageData(0,0,c.width,c.height).data,k=0,n=0;for(var i=3;i<d.length;i+=160){n++;if(!d[i])k++}if(k/n>.5){dn=1;c.style.opacity=0;c.style.pointerEvents='none';$('b2').style.display='block';boom()}}}
-c.addEventListener('pointerdown',function(e){dr=1;c.setPointerCapture(e.pointerId);sc(e)});c.addEventListener('pointermove',sc);c.addEventListener('pointerup',function(){dr=0})}
-// coupons
-var CP=[["🤗","One long hug, no phone, no rush"],["🍰","Dessert date — your pick"],["🛋️","One lazy movie night, zero chores"],["🌅","A sunset walk, just the two of you"],["👶","One free baby-sitting evening"],["🍽️","Dinner out — we’re paying"]];
-var used={};try{used=JSON.parse(localStorage.getItem('cp1')||'{}')}catch(e){}
-$('cps').innerHTML=CP.map(function(c,i){return '<div class="cp'+(used[i]?' u':'')+'" onclick="red(this,'+i+')"><span class="e">'+c[0]+'</span><b>'+c[1]+'</b></div>'}).join('');
-function red(el,i){el.classList.toggle('u');used[i]=el.classList.contains('u')?1:0;try{localStorage.setItem('cp1',JSON.stringify(used))}catch(e){}if(used[i])boom()}
-// lyrics
-var LY=["Two hearts, one little light,","Holding hands through day and night,","Every smile is where we’re from,","Home is wherever you two come.","No reason, no day, no one to impress —","Just love, and a little happiness. ♥"],lt;
-function lyr(){clearInterval(lt);var i=0;$('ly').textContent=LY[0];lt=setInterval(function(){i=(i+1)%LY.length;$('ly').textContent=LY[i]},3200)}
-// confetti
-var cv=$('cf'),cx=cv.getContext('2d'),P=[];function rs(){cv.width=innerWidth;cv.height=innerHeight}rs();addEventListener('resize',rs);
-function boom(){for(var i=0;i<130;i++)P.push({x:Math.random()*cv.width,y:-20-Math.random()*cv.height*.5,vy:2+Math.random()*4,vx:Math.random()*2-1,s:6+Math.random()*7,c:['#ff7a9e','#f2c46d','#7be0c3','#a98bff','#fff'][i%5],r:Math.random()*6});if(!ra)ani()}
-var ra=0;function ani(){ra=1;cx.clearRect(0,0,cv.width,cv.height);P=P.filter(function(p){return p.y<cv.height+20});P.forEach(function(p){p.y+=p.vy;p.x+=p.vx+Math.sin(p.y/30);p.r+=.1;cx.fillStyle=p.c;cx.save();cx.translate(p.x,p.y);cx.rotate(p.r);cx.fillRect(-p.s/2,-p.s/4,p.s,p.s/2);cx.restore()});if(P.length)requestAnimationFrame(ani);else ra=0}
-// music: original music-box lullaby (Web Audio)
-var ac,mt,on=false,bar=0;var FQ=function(n){var m={C:0,D:2,E:4,F:5,G:7,A:9,B:11}[n[0]];return 440*Math.pow(2,(m-9+12*(+n[1]-4))/12)};
-var MEL=["E5 . G5 . E5 . D5 C5","C5 . E5 . D5 . C5 A4","A4 . C5 . F5 . E5 D5","D5 . G5 . F5 . D5 B4"],BAS=["C3","A2","F2","G2"],CH=[["C4","E4","G4"],["A3","C4","E4"],["F3","A3","C4"],["G3","B3","D4"]];
-function nt(f,t,d,g,ty){var o=ac.createOscillator(),v=ac.createGain();o.type=ty;o.frequency.value=f;v.gain.setValueAtTime(0,t);v.gain.linearRampToValueAtTime(g,t+.01);v.gain.exponentialRampToValueAtTime(.0001,t+d);o.connect(v).connect(ac.destination);o.start(t);o.stop(t+d+.05)}
-function playBar(){var b=bar%4,t=ac.currentTime+.05,e=.36;MEL[b].split(' ').forEach(function(n,i){if(n!='.'){nt(FQ(n),t+i*e,1.6,.16,'sine');nt(FQ(n)*2,t+i*e,.5,.03,'sine')}});nt(FQ(BAS[b]),t,2.6,.2,'triangle');nt(FQ(BAS[b]),t+4*e,1.6,.14,'triangle');for(var i=0;i<8;i++)nt(FQ(CH[b][i%3]),t+i*e,.9,.045,'triangle');bar++}
-function music(f){try{if(!ac)ac=new(window.AudioContext||window.webkitAudioContext)();if(ac.state=='suspended')ac.resume();if(f==false){on=false;clearInterval(mt);$('mus').textContent='♪ Music off';return}if(on)return;on=true;$('mus').textContent='♪ Music on';playBar();mt=setInterval(playBar,2880)}catch(e){}}
-$('mus').onclick=function(){music(on?false:true)};
-</script></body></html>
+function showErr(m){ var d = document.getElementById("err"); if (!d) { d = document.createElement("div"); d.id = "err";
+  d.style.cssText = "position:fixed;left:10px;right:10px;bottom:10px;z-index:99;padding:10px 12px;border-radius:10px;background:#3a1220;color:#ffd7df;font:13px Arial";
+  document.body.appendChild(d); } d.textContent = "Error: " + m; }
+window.addEventListener("error", function(e){ showErr(e.message); });
+
+const $ = s => document.querySelector(s);
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const stage = $("#stage");
+const waitClick = el => new Promise(r => el.addEventListener("click", r, { once: true }));
+async function show(html){ stage.classList.remove("on"); await sleep(900); stage.innerHTML = html; stage.scrollTop = 0; void stage.offsetWidth; stage.classList.add("on"); }
+async function hide(){ stage.classList.remove("on"); await sleep(1100); }
+async function revealLines(box, gap = 1500){ for (const p of box.querySelectorAll("p")) { p.classList.add("in"); await sleep(gap); } }
+async function nextBtn(label = "Continue"){ const b = $("#next"); b.textContent = label; b.classList.add("in"); b.scrollIntoView({ block: "nearest", behavior: "smooth" }); await waitClick(b); }
+
+$("#i1").textContent = FILM.intro.eyebrow;
+$("#i2").innerHTML = esc(FILM.her) + '<span class="amp">&amp;</span>' + esc(FILM.him);
+$("#i3").textContent = FILM.intro.line; $("#begin").textContent = FILM.intro.button;
+
+/* photos */
+const SRC = FILM.img.map(f => encodeURI(f));
+
+/* music */
+const song = $("#song");
+let ac, master, musicOn = false;
+function fadeTo(to, ms = 2500){
+  const from = song.volume, st = performance.now();
+  (function f(){ const k = Math.min(1, (performance.now() - st) / ms); song.volume = Math.max(0, Math.min(1, from + (to - from) * k)); if (k < 1) requestAnimationFrame(f); })();
+}
+function startMusic(){
+  try { song.src = encodeURI(FILM.song); song.volume = 0; const p = song.play(); if (p && p.then) p.then(() => fadeTo(.9, 3000)).catch(() => {}); } catch (_) {}
+  try { ac = new (window.AudioContext || window.webkitAudioContext)(); master = ac.createGain(); master.gain.value = .8; master.connect(ac.destination); } catch (_) {}
+  musicOn = true; $("#mus").hidden = false;
+}
+$("#mus").onclick = () => { musicOn = !musicOn; song.muted = !musicOn; if (musicOn && song.paused) song.play().catch(() => {}); $("#mus").style.opacity = musicOn ? 1 : .4; };
+function chime(){ try { if (!ac) return; const t = ac.currentTime, o = ac.createOscillator(), g = ac.createGain();
+  o.type = "sine"; o.frequency.setValueAtTime(1568, t); o.frequency.exponentialRampToValueAtTime(2093, t + .15);
+  g.gain.setValueAtTime(.12, t); g.gain.exponentialRampToValueAtTime(.001, t + 1.4); o.connect(g); g.connect(master); o.start(t); o.stop(t + 1.5); } catch (_) {} }
+
+/* background: stars, sparkles, constellation, lanterns */
+const sc = $("#stars"), sg = sc.getContext("2d"), fc = $("#fx"), fg = fc.getContext("2d");
+let W, H, DPR = Math.min(2, devicePixelRatio || 1), STARS = [], SPARK = [], heartMode = null, LANT = [];
+function size(){ W = innerWidth; H = innerHeight;
+  [sc, fc].forEach(c => { c.width = W * DPR; c.height = H * DPR; c.getContext("2d").setTransform(DPR, 0, 0, DPR, 0, 0); });
+  STARS = Array.from({ length: Math.round(W * H / 5000) }, () => ({ x: Math.random() * W, y: Math.random() * H, r: Math.random() * 1.3 + .2, p: Math.random() * 6, s: .5 + Math.random() * 2 })); }
+size(); addEventListener("resize", size);
+function sparkle(x, y, n = 40){ const cols = ["#fff3dc", "#e8cfa0", "#f3b6c2"];
+  for (let i = 0; i < n; i++) { const a = Math.random() * 6.28, v = 1 + Math.random() * 5;
+    SPARK.push({ x, y, vx: Math.cos(a) * v, vy: Math.sin(a) * v - 1.5, life: 1, r: 1 + Math.random() * 2.5, c: cols[i % 3], heart: Math.random() < .35 }); } }
+function heartShape(g, x, y, s){ g.beginPath(); g.moveTo(x, y + s * .3);
+  g.bezierCurveTo(x, y, x - s * .5, y, x - s * .5, y + s * .3); g.bezierCurveTo(x - s * .5, y + s * .6, x, y + s * .8, x, y + s);
+  g.bezierCurveTo(x, y + s * .8, x + s * .5, y + s * .6, x + s * .5, y + s * .3); g.bezierCurveTo(x + s * .5, y, x, y, x, y + s * .3); g.fill(); }
+function lantern(x){ LANT.push({ x, y: H + 40, s: .7 + Math.random() * .6, v: .5 + Math.random() * .5, ph: Math.random() * 6, life: 1 }); }
+function loop(t){
+  t /= 1000; sg.clearRect(0, 0, W, H);
+  STARS.forEach(s => { sg.globalAlpha = .25 + .55 * Math.abs(Math.sin(t * s.s * .5 + s.p)); sg.fillStyle = "#fff"; sg.beginPath(); sg.arc(s.x, s.y, s.r, 0, 7); sg.fill(); });
+  sg.globalAlpha = 1;
+  if (heartMode) drawConstellation(t);
+  fg.clearRect(0, 0, W, H);
+  SPARK = SPARK.filter(p => p.life > 0);
+  SPARK.forEach(p => { p.x += p.vx; p.y += p.vy; p.vy += .06; p.vx *= .98; p.life -= .012;
+    fg.globalAlpha = Math.max(0, p.life); fg.fillStyle = p.c;
+    if (p.heart) heartShape(fg, p.x, p.y, p.r * 5); else { fg.beginPath(); fg.arc(p.x, p.y, p.r, 0, 7); fg.fill(); } });
+  fg.globalAlpha = 1;
+  LANT = LANT.filter(l => l.y > -80 && l.life > 0);
+  LANT.forEach(l => {
+    l.y -= l.v; l.x += Math.sin(t + l.ph) * .3; if (l.y < H * .25) l.life -= .004;
+    const s = 26 * l.s, fl = .85 + .15 * Math.sin(t * 9 + l.ph);
+    fg.save(); fg.globalAlpha = Math.max(0, l.life); fg.translate(l.x, l.y);
+    const glow = fg.createRadialGradient(0, 0, 2, 0, 0, s * 2.4); glow.addColorStop(0, "rgba(255,190,110," + (.45 * fl) + ")"); glow.addColorStop(1, "rgba(255,150,80,0)");
+    fg.fillStyle = glow; fg.beginPath(); fg.arc(0, 0, s * 2.4, 0, 7); fg.fill();
+    const body = fg.createLinearGradient(0, -s, 0, s); body.addColorStop(0, "#ffd9a0"); body.addColorStop(.6, "#ff9f5a"); body.addColorStop(1, "#e2603a");
+    fg.fillStyle = body; fg.beginPath();
+    fg.moveTo(-s * .55, -s); fg.lineTo(s * .55, -s); fg.quadraticCurveTo(s * .8, 0, s * .45, s); fg.lineTo(-s * .45, s); fg.quadraticCurveTo(-s * .8, 0, -s * .55, -s); fg.fill();
+    fg.fillStyle = "rgba(255,250,220," + (.9 * fl) + ")"; fg.beginPath(); fg.ellipse(0, s * .75, s * .18, s * .12, 0, 0, 7); fg.fill();
+    fg.restore(); });
+  requestAnimationFrame(loop);
+}
+requestAnimationFrame(loop);
+function drawConstellation(t){
+  const h = heartMode, k = Math.min(1, (performance.now() - h.t0) / 5200), n = h.pts.length, shown = k * n;
+  sg.strokeStyle = "rgba(232,207,160,.75)"; sg.lineWidth = 1.2; sg.beginPath();
+  for (let i = 0; i < Math.min(n, Math.ceil(shown)); i++) {
+    const [x, y] = h.pts[i], [nx, ny] = h.pts[(i + 1) % n], f = Math.min(1, shown - i);
+    if (i === 0) sg.moveTo(x, y); sg.lineTo(x + (nx - x) * f, y + (ny - y) * f); }
+  sg.stroke();
+  h.pts.forEach(([x, y], i) => { if (i <= shown) { sg.fillStyle = "rgba(255,243,220," + (.6 + .4 * Math.sin(t * 3 + i)) + ")"; sg.beginPath(); sg.arc(x, y, 2.4, 0, 7); sg.fill(); } });
+  if (h.child) {
+    const c = Math.min(1, (performance.now() - h.child) / 1500), r = 5 * c * (1 + .25 * Math.sin(t * 2.4)), [x, y] = h.center;
+    const gl = sg.createRadialGradient(x, y, 0, x, y, 46 * c + 1); gl.addColorStop(0, "rgba(255,236,200,.7)"); gl.addColorStop(1, "rgba(243,182,194,0)");
+    sg.fillStyle = gl; sg.beginPath(); sg.arc(x, y, 46 * c + 1, 0, 7); sg.fill();
+    sg.fillStyle = "#fffaf0"; sg.beginPath();
+    for (let i = 0; i < 8; i++) { const a = i * Math.PI / 4, rr = i % 2 ? r * .8 : r * 3.2; sg.lineTo(x + Math.cos(a) * rr, y + Math.sin(a) * rr); }
+    sg.fill(); sg.globalAlpha = c; sg.font = "400 30px 'Pinyon Script', cursive"; sg.textAlign = "center"; sg.fillStyle = "#f3d9b0";
+    sg.fillText(FILM.child, x, y + 44); sg.globalAlpha = 1; }
+}
+
+/* scenes */
+async function sceneStars(){
+  await show('<div class="stack" style="align-self:end;margin-bottom:6vh"><p class="lead" id="sl" style="opacity:0;transition:opacity 2s">' + esc(FILM.stars.line) + '</p>' +
+    '<p class="lead" id="sl2" style="opacity:0;transition:opacity 2s;color:var(--gold)">' + esc(FILM.stars.child) + '</p><button class="btn ghost later" id="next"></button></div>');
+  const cx = W / 2, cy = H * .3, k = Math.min(W, H) / 48, pts = [];
+  for (let i = 0; i < 26; i++) { const a = i / 26 * Math.PI * 2;
+    pts.push([cx + 16 * Math.pow(Math.sin(a), 3) * k, cy - (13 * Math.cos(a) - 5 * Math.cos(2 * a) - 2 * Math.cos(3 * a) - Math.cos(4 * a)) * k]); }
+  heartMode = { pts, t0: performance.now(), center: [cx, cy + k * 1.5] };
+  await sleep(2600); $("#sl").style.opacity = 1; await sleep(3000); sparkle(cx, cy, 60); chime();
+  await sleep(1200); heartMode.child = performance.now(); chime(); sparkle(cx, cy + k * 1.5, 40);
+  await sleep(1000); $("#sl2").style.opacity = 1; await sleep(1800);
+  await nextBtn(); heartMode = null; await hide();
+}
+async function scenePolaroid(){
+  const P = FILM.polaroid;
+  await show('<div class="stack"><div class="eyebrow">' + esc(P.eyebrow) + '</div><button class="polaroid" id="pol"><div class="ph"><img alt="" src="' + SRC[0] + '"></div><div class="cap">' + esc(P.caption) + '</div></button>' +
+    '<p class="hint" id="h">' + esc(P.hint) + '</p><div class="lines" id="ln">' + P.lines.map(l => '<p>' + esc(l) + '</p>').join("") + '</div><button class="btn ghost later" id="next"></button></div>');
+  const pol = $("#pol"); await waitClick(pol);
+  $("#h").remove(); pol.classList.add("shake", "dev"); chime();
+  const r = pol.getBoundingClientRect(); setTimeout(() => sparkle(r.left + r.width / 2, r.top + r.height / 2, 50), 2500);
+  await sleep(3000); await revealLines($("#ln")); await nextBtn(); await hide();
+}
+async function sceneHalves(){
+  const P = FILM.halves, s = SRC[1];
+  await show('<div class="stack"><div class="eyebrow">' + esc(P.eyebrow) + '</div><div class="halves" id="hv"><div class="half l" style="background-image:url(\'' + s + '\')"></div><div class="half r" style="background-image:url(\'' + s + '\')"></div></div>' +
+    '<input type="range" class="slider" id="sl" min="0" max="100" value="0"><p class="hint" id="h">' + esc(P.hint) + '</p><div class="lines" id="ln">' + P.lines.map(l => '<p>' + esc(l) + '</p>').join("") + '</div><button class="btn ghost later" id="next"></button></div>');
+  const L = $(".half.l"), R = $(".half.r"), sl = $("#sl");
+  const set = v => { const k = 1 - v / 100;
+    L.style.transform = "translateX(" + (-55 * k) + "%) rotate(" + (-8 * k) + "deg)"; R.style.transform = "translateX(" + (55 * k) + "%) rotate(" + (8 * k) + "deg)";
+    L.style.filter = R.style.filter = "grayscale(" + k + ") brightness(" + (.6 + .4 * (1 - k)) + ")"; sl.style.setProperty("--p", v + "%"); };
+  set(0);
+  await new Promise(res => sl.addEventListener("input", () => { set(+sl.value); if (+sl.value >= 95) { sl.disabled = true; res(); } }));
+  set(100); $("#hv").classList.add("joined"); chime();
+  const r = $("#hv").getBoundingClientRect(); sparkle(r.left + r.width / 2, r.top + r.height / 2, 80);
+  sl.style.opacity = 0; $("#h").remove();
+  await sleep(900); await revealLines($("#ln")); await nextBtn(); await hide();
+}
+async function sceneReasons(){
+  const P = FILM.reasons;
+  await show('<div class="stack"><h2 class="serif" style="font-size:clamp(24px,min(6.6vw,5vh),40px);max-width:16ch">' + esc(P.title) + '</h2><div class="rule"></div><p class="hint">' + esc(P.hint) + '</p>' +
+    '<div class="cards">' + P.cards.map((c, i) => '<button class="rc"><span class="in"><span class="f">' + (i + 1) + '</span><span class="b">' + esc(c) + '</span></span></button>').join("") + '</div><button class="btn ghost later" id="next"></button></div>');
+  let flipped = 0;
+  await new Promise(res => document.querySelectorAll(".rc").forEach(b => b.onclick = () => {
+    if (b.classList.contains("flip")) return; b.classList.add("flip"); chime();
+    const r = b.getBoundingClientRect(); sparkle(r.left + r.width / 2, r.top + r.height / 2, 18);
+    if (++flipped === P.cards.length) res(); }));
+  await sleep(800); await nextBtn(); await hide();
+}
+async function sceneBook(){
+  const P = FILM.book;
+  await show('<div class="stack"><button class="book" id="bk"><div class="page"><img alt="" src="' + SRC[2] + '"><div class="txt"><div class="lines" id="ln">' +
+    P.lines.map(l => '<p style="font-size:inherit;color:#4a3a2b">' + esc(l) + '</p>').join("") + '</div></div></div>' +
+    '<div class="cover"><div class="front"><div class="eyebrow">' + esc(P.coverTop) + '</div><div class="script" style="font-size:96px">' + esc(P.coverTitle) + '</div></div><div class="back"></div></div></button>' +
+    '<p class="hint" id="h">' + esc(P.hint) + '</p><button class="btn ghost later" id="next"></button></div>');
+  const bk = $("#bk"); await waitClick(bk);
+  bk.classList.add("open"); $("#h").style.visibility = "hidden"; chime();
+  await sleep(1700); await revealLines($("#ln"), 1700); await nextBtn(); await hide();
+}
+async function sceneHeart(){
+  const P = FILM.heart;
+  await show('<div class="stack"><div class="eyebrow">' + esc(P.eyebrow) + '</div><div class="heartWrap"><div class="heartImg" style="background-image:url(\'' + SRC[3] + '\')"></div></div>' +
+    '<div class="lines" id="ln">' + P.lines.map(l => '<p>' + esc(l) + '</p>').join("") + '</div><button class="btn ghost later" id="next"></button></div>');
+  await sleep(1400); sparkle(W / 2, H * .4, 90); chime();
+  await revealLines($("#ln"), 1700); await nextBtn("One last thing"); await hide();
+}
+async function sceneLanterns(){
+  const P = FILM.lanterns;
+  await show('<div class="stack" style="align-self:start;margin-top:8vh"><h2 class="script" style="font-size:clamp(42px,min(13vw,9vh),80px)">' + esc(P.title) + '</h2><p class="hint" id="h">' + esc(P.hint) + '</p>' +
+    '<div class="lines" id="ln"><p>' + esc(P.end1) + '</p><p style="color:var(--gold)">' + esc(P.end2) + '</p></div></div>' +
+    '<div style="position:fixed;left:0;right:0;bottom:6vh;display:flex;justify-content:center"><button class="btn later" id="again">Watch again</button></div>');
+  let n = 0, done = false;
+  const tap = e => { if (e.target.closest("button")) return; lantern(e.clientX); chime();
+    if (++n === 5 && !done) { done = true; $("#h").remove(); for (let i = 0; i < 14; i++) setTimeout(() => lantern(Math.random() * W), i * 350);
+      revealLines($("#ln"), 1800).then(() => { $("#again").classList.add("in"); fadeTo(.35, 6000); }); } };
+  stage.addEventListener("pointerdown", tap);
+  setTimeout(() => lantern(W * .3), 600); setTimeout(() => lantern(W * .7), 1400);
+  await waitClick($("#again")); stage.removeEventListener("pointerdown", tap);
+  song.currentTime = 0; fadeTo(.9, 2000); await hide(); run();
+}
+
+/* tasks */
+function taskCard(T, inner){ return '<div class="task" id="task"><span class="tag">' + esc(T.tag) + '</span><h2>' + esc(T.title) + '</h2><p class="desc">' + esc(T.desc) + '</p>' + inner +
+  '<p class="desc" id="tdone" style="opacity:0;transition:opacity 1.2s;color:var(--gold)">' + esc(T.done) + '</p><span class="stamp" id="stamp">done</span></div>'; }
+async function taskComplete(){
+  $("#stamp").classList.add("in"); chime();
+  const r = $("#task").getBoundingClientRect(); sparkle(r.left + r.width / 2, r.top + r.height / 2, 90);
+  await sleep(700); $("#tdone").style.opacity = 1; await sleep(900); await nextBtn();
+}
+const RING = '<svg class="ring" viewBox="0 0 130 130"><circle class="bgc" cx="65" cy="65" r="56"/><circle class="fg" id="rg" cx="65" cy="65" r="56"/><text x="65" y="65" id="cnt"></text></svg>';
+async function taskHold(){
+  const T = FILM.tasks.hold;
+  const heart = (id, l, c) => '<button class="holdH" id="' + id + '"><svg viewBox="0 0 100 92"><path d="M50 90 C20 68 0 50 0 27 C0 11 12 0 27 0 C37 0 45 6 50 14 C55 6 63 0 73 0 C88 0 100 11 100 27 C100 50 80 68 50 90Z" fill="' + c + '"/></svg><span class="lbl">' + esc(l) + '</span></button>';
+  await show('<div class="stack">' + taskCard(T, '<div class="holdRow">' + heart("hA", T.left, "#e07b93") + heart("hB", T.right, "#d4a868") + '</div>' + RING) + '<button class="btn ghost later" id="next"></button></div>');
+  $("#cnt").textContent = "0%";
+  const act = {}, single = !matchMedia("(pointer: coarse)").matches;   // on a computer, one hold is enough
+  ["hA", "hB"].forEach(id => { const el = $("#" + id);
+    el.addEventListener("pointerdown", e => { e.preventDefault(); act[id] = true; el.classList.add("on"); try { el.setPointerCapture(e.pointerId); } catch (_) {} });
+    const off = () => { act[id] = false; el.classList.remove("on"); };
+    ["pointerup", "pointercancel", "lostpointercapture"].forEach(ev => el.addEventListener(ev, off));
+    el.addEventListener("contextmenu", e => e.preventDefault()); });
+  let p = 0, last = performance.now();
+  await new Promise(res => (function tick(now){
+    const dt = now - last; last = now;
+    const ok = (act.hA && act.hB) || (single && (act.hA || act.hB));
+    p = Math.max(0, Math.min(1, p + (ok ? dt / 3000 : -dt / 1500)));
+    $("#rg").style.strokeDashoffset = 352 * (1 - p); $("#cnt").textContent = Math.round(p * 100) + "%";
+    if (p >= 1) return res(); requestAnimationFrame(tick);
+  })(last));
+  await taskComplete(); await hide();
+}
+async function taskTimer(){
+  const T = FILM.tasks.hug;
+  await show('<div class="stack">' + taskCard(T, RING + '<button class="btn" id="startT">' + esc(T.start) + '</button>') + '<button class="btn ghost later" id="next"></button></div>');
+  $("#cnt").textContent = T.seconds;
+  await waitClick($("#startT")); $("#startT").style.visibility = "hidden";
+  const t0 = performance.now(), dur = T.seconds * 1000;
+  await new Promise(res => (function tick(now){
+    const k = Math.min(1, (now - t0) / dur);
+    $("#rg").style.strokeDashoffset = 352 * (1 - k); $("#cnt").textContent = Math.ceil(T.seconds * (1 - k));
+    if (k >= 1) return res(); requestAnimationFrame(tick);
+  })(t0));
+  $("#cnt").textContent = "♡"; await taskComplete(); await hide();
+}
+async function taskChecks(){
+  const T = FILM.tasks.say;
+  await show('<div class="stack">' + taskCard(T, '<div class="checks"><button class="chk"><span class="box"></span>' + esc(FILM.her) + ' said it</button><button class="chk"><span class="box"></span>' + esc(FILM.him) + ' said it</button></div>') +
+    '<button class="btn ghost later" id="next"></button></div>');
+  let n = 0;
+  await new Promise(res => document.querySelectorAll(".chk").forEach(b => b.onclick = () => {
+    if (b.classList.contains("on")) return; b.classList.add("on"); b.querySelector(".box").textContent = "✓"; chime();
+    if (++n === 2) res(); }));
+  await taskComplete(); await hide();
+}
+
+async function run(){
+  try {
+    await sceneStars();
+    await scenePolaroid();
+    await taskHold();
+    await sceneHalves();
+    await sceneReasons();
+    await taskTimer();
+    await sceneBook();
+    await taskChecks();
+    await sceneHeart();
+    await sceneLanterns();
+  } catch (e) { showErr(e.message); }
+}
+
+$("#begin").onclick = async () => {
+  startMusic();
+  try { const r = $("#begin").getBoundingClientRect(); sparkle(r.left + r.width / 2, r.top, 60); } catch (_) {}
+  $("#s0").classList.remove("on");
+  await sleep(900); run();
+};
+</script>
+</body>
+</html>
