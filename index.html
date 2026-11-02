@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>For Soundarya &amp; Yoganand</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%99%A5%EF%B8%8F%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;1,400&family=Pinyon+Script&family=Jost:wght@300;400;500&display=swap">
 
@@ -155,9 +156,11 @@ canvas.fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none}
 <section class="screen" id="stage"></section>
 <audio id="song" preload="auto" loop></audio>
 
+<script src="crypto.js"></script>
 <script>
 /* ================== EDIT EVERYTHING HERE ================== */
 const FILM = {
+  password: "YOUR_PASSWORD_HERE",     // must match the password the enc/*.bin files were encrypted with
   img: ["Order7 Image1.jpeg", "Order7 Image2.jpeg", "Order7 Image3.jpeg", "Order7 Image4.jpeg"],
   song: "Order7.mpeg",
   him: "Yoganand", her: "Soundarya", child: "Vrinda",
@@ -210,8 +213,17 @@ $("#i1").textContent = FILM.intro.eyebrow;
 $("#i2").innerHTML = esc(FILM.her) + '<span class="amp">&amp;</span>' + esc(FILM.him);
 $("#i3").textContent = FILM.intro.line; $("#begin").textContent = FILM.intro.button;
 
-/* photos */
-const SRC = FILM.img.map(f => encodeURI(f));
+/* photos: decrypted from enc/*.bin into blob: URLs */
+const SRC = [];
+const encPath = f => "enc/" + f.replace(/\.jpe?g$/i, ".bin");   // "Order7 Image1.jpeg" -> "enc/Order7 Image1.bin"
+async function loadImages(){
+  await Promise.all(FILM.img.map(async (f, i) => {
+    try {
+      const buf = await decryptFile(FILM.password, encodeURI(encPath(f)));
+      SRC[i] = URL.createObjectURL(new Blob([buf], { type: "image/jpeg" }));
+    } catch (e) { SRC[i] = ""; showErr("Could not load " + f); }
+  }));
+}
 
 /* music */
 const song = $("#song");
@@ -441,7 +453,7 @@ $("#begin").onclick = async () => {
   startMusic();
   try { const r = $("#begin").getBoundingClientRect(); sparkle(r.left + r.width / 2, r.top, 60); } catch (_) {}
   $("#s0").classList.remove("on");
-  await sleep(900); run();
+  await Promise.all([sleep(900), loadImages()]); run();
 };
 </script>
 </body>
